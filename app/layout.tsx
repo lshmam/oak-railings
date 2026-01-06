@@ -32,9 +32,9 @@ const neueMontreal = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "Oak Railings | Premium Handcrafted Oak Balustrades",
+  title: "Oak Railings | Premium Handcrafted Oak Railings",
   description:
-    "Transform your home with beautifully handcrafted oak railings and balustrades. Bespoke designs, expert craftsmanship, timeless elegance.",
+    "Transform your home with beautifully handcrafted oak railings. Bespoke designs, expert craftsmanship, timeless elegance.",
   icons: {
     icon: "/railing.png",
     apple: "/railing.png",

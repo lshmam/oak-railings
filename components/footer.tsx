@@ -11,7 +11,7 @@ export function Footer() {
               Oak Railings
             </Link>
             <p className="text-background/70 leading-relaxed max-w-md">
-              Transforming homes with beautifully handcrafted oak railings and balustrades since 2010. Quality
+              Transforming homes with beautifully handcrafted oak railings since 2010. Quality
               craftsmanship, timeless elegance.
             </p>
           </div>

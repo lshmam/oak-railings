@@ -51,8 +51,8 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="bg-secondary p-8 md:p-12">
-            <h3 className="text-2xl font-medium text-secondary-foreground mb-6">Request a Free Quote</h3>
+          <div className="bg-white border border-border p-8 md:p-12">
+            <h3 className="text-2xl font-medium text-foreground mb-6">Request a Free Quote</h3>
             <form
               action="https://formsubmit.co/oakrailingsltd@gmail.com"
               method="POST"

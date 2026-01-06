@@ -29,22 +29,22 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-24 md:py-32 bg-primary text-primary-foreground">
+    <section id="services" className="py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/70 mb-4">How We Work</p>
-          <h2 className="text-4xl md:text-5xl font-medium leading-tight">From concept to completion</h2>
+          <p className="text-sm tracking-[0.3em] uppercase text-accent mb-4">How We Work</p>
+          <h2 className="text-4xl md:text-5xl font-medium text-foreground leading-tight">From concept to completion</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div key={service.title} className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-foreground/10 mb-6">
-                <service.icon className="w-7 h-7" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary mb-6">
+                <service.icon className="w-7 h-7 text-accent" />
               </div>
-              <div className="text-xs tracking-widest text-primary-foreground/50 mb-3">0{index + 1}</div>
-              <h3 className="text-xl font-medium mb-4">{service.title}</h3>
-              <p className="text-sm text-primary-foreground/70 leading-relaxed">{service.description}</p>
+              <div className="text-xs tracking-widest text-muted-foreground mb-3">0{index + 1}</div>
+              <h3 className="text-xl font-medium text-foreground mb-4">{service.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

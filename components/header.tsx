@@ -13,7 +13,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-medium tracking-tight text-foreground">
-            Oak Railings
+            Oak Railings LTD
           </Link>
 
           {/* Desktop Navigation */}

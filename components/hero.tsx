@@ -1,44 +1,31 @@
-import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 
 export function Hero() {
   return (
-    <section className="pt-[72px] bg-background">
-      {/* Video Hero */}
-      <div className="relative w-full aspect-video max-h-[70vh] overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          <source src="/oak-railings-hero.mp4" type="video/mp4" />
-        </video>
+    <section className="relative pt-[72px] min-h-screen">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/9.jpg')" }}
+      >
+        {/* Dark Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* Text Content - Below Video */}
-      <div className="max-w-8xl mx-auto px-6 py-8 lg:py-12 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight text-foreground text-balance mb-6">
-          Timeless craftsmanship meets exquisite design
+      {/* Text Content - Overlaid on Image */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 lg:py-48 flex flex-col items-center text-center">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight text-white mb-6 max-w-4xl">
+          Need a railing or staircase? Oak Railings LTD has you covered.
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-          Transform your home with beautifully handcrafted oak railings and balustrades. Every piece tells a story
-          of dedication, precision, and natural beauty.
+        <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl leading-relaxed">
+          Premium handcrafted oak railings and staircases. Serving Vancouver, Delta, Surrey, and the Lower Mainland.
         </p>
-
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <a href="tel:+17785369536">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8">
-              Request a Consultation
-            </Button>
-          </a>
-
-        </div>
+        <a href="tel:+17785369536">
+          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8">
+            Find Out More
+          </Button>
+        </a>
       </div>
     </section>
   )
 }
-
-

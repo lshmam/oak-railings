@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Parminder Josan",
     location: "Vancouver",
-    text: "Absolutely stunning work. Jashan transformed our hallway with a beautiful Georgian-style balustrade. The attention to detail is remarkable.",
+    text: "Absolutely stunning work. Jashan transformed our hallway with a beautiful Georgian-style railing. The attention to detail is remarkable.",
     rating: 5,
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 md:py-32 bg-secondary">
+    <section id="testimonials" className="py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-accent mb-4">Testimonials</p>
@@ -34,7 +34,7 @@ export function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.name} className="bg-card p-8 shadow-sm">
+            <div key={testimonial.name} className="bg-primary/10 p-8 shadow-sm">
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-accent text-accent" />
