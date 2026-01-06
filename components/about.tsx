@@ -9,7 +9,7 @@ export function About() {
           <div className="relative">
             <img
               src="/1.jpg"
-              alt="Beautiful oak staircase installation"
+              alt="Beautiful oak railing installation"
               className="w-full h-[400px] md:h-[500px] object-cover"
             />
           </div>
@@ -18,7 +18,7 @@ export function About() {
               Are your stairs unsafe? Do they meet your current building code?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Your staircase is the focal point in your home. Safety features may be outdated and no
+              Your railing is the focal point in your home. Safety features may be outdated and no
               longer meeting current building code. Our expert team ensures every installation is
               compliant and beautiful.
             </p>

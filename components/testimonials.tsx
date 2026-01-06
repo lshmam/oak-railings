@@ -10,7 +10,7 @@ const testimonials = [
   {
     name: "James & Emma Thompson",
     location: "Delta",
-    text: "From the initial consultation to the final installation, the entire experience was exceptional. Our spiral staircase is now the talking point of our home.",
+    text: "From the initial consultation to the final installation, the entire experience was exceptional. Our oak railing is now the talking point of our home.",
     rating: 5,
   },
   {

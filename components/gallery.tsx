@@ -6,7 +6,7 @@ import { X } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Georgian Staircase",
+    title: "Georgian Railing",
     category: "Traditional",
     image: "/1.jpg",
   },
