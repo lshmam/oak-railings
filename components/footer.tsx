@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
             <Link href="/" className="text-3xl font-medium tracking-tight mb-4 block">
-              Oak Railings
+              OAK RAILINGS LTD
             </Link>
             <p className="text-background/70 leading-relaxed max-w-md">
               Transforming homes with beautifully handcrafted oak railings since 2010. Quality

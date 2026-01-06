@@ -17,7 +17,7 @@ const services = [
     icon: Hammer,
     title: "Expert Craftsmanship",
     description:
-      "Our skilled craftsmen bring your vision to life using traditional techniques and premium European oak in our dedicated workshop.",
+      "Our skilled craftsmen bring your vision to life using traditional techniques and premium European oak.",
   },
   {
     icon: Truck,

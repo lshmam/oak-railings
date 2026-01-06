@@ -44,7 +44,7 @@ export function Contact() {
                   <MapPin className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Visit our workshop</p>
+                  <p className="text-sm text-muted-foreground">Our location</p>
                   <p className="font-medium text-foreground">Delta, BC &bull; Serving Vancouver & the Lower Mainland</p>
                 </div>
               </div>
