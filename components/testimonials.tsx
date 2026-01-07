@@ -1,4 +1,7 @@
+"use client"
+
 import { Star } from "lucide-react"
+import { AnimatedSection } from "./animated-section"
 
 const testimonials = [
   {
@@ -25,31 +28,36 @@ export function Testimonials() {
   return (
     <section id="testimonials" className="py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <AnimatedSection className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-accent mb-4">Testimonials</p>
           <h2 className="text-4xl md:text-5xl font-medium text-secondary-foreground leading-tight">
             What our clients say
           </h2>
-        </div>
+        </AnimatedSection>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.name} className="bg-primary/10 p-8 shadow-sm">
-              <div className="flex gap-1 mb-6">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
-                ))}
+          {testimonials.map((testimonial, index) => (
+            <AnimatedSection
+              key={testimonial.name}
+              animation="fade-up"
+              delay={index * 150}
+            >
+              <div className="bg-primary/10 p-8 shadow-sm h-full">
+                <div className="flex gap-1 mb-6">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                  ))}
+                </div>
+                <p className="text-card-foreground leading-relaxed mb-6 italic">&ldquo;{testimonial.text}&rdquo;</p>
+                <div>
+                  <p className="font-medium text-lg text-card-foreground">{testimonial.name}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                </div>
               </div>
-              <p className="text-card-foreground leading-relaxed mb-6 italic">&ldquo;{testimonial.text}&rdquo;</p>
-              <div>
-                <p className="font-medium text-lg text-card-foreground">{testimonial.name}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-              </div>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </div>
     </section>
   )
 }
-

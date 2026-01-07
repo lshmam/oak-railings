@@ -1,4 +1,7 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
+import { AnimatedSection } from "./animated-section"
 
 export function About() {
   return (
@@ -6,14 +9,14 @@ export function About() {
       <div className="max-w-7xl mx-auto px-6 space-y-24">
         {/* Section 1: Image Left, Text Right */}
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="relative">
+          <AnimatedSection animation="slide-left">
             <img
-              src="/1.jpg"
+              src="/11.jpg"
               alt="Beautiful oak railing installation"
               className="w-full h-[400px] md:h-[500px] object-cover"
             />
-          </div>
-          <div>
+          </AnimatedSection>
+          <AnimatedSection animation="slide-right" delay={150}>
             <h2 className="text-3xl md:text-4xl font-medium text-foreground leading-tight mb-6">
               Are your stairs unsafe? Do they meet your current building code?
             </h2>
@@ -30,12 +33,12 @@ export function About() {
                 Contact Us Today
               </Button>
             </a>
-          </div>
+          </AnimatedSection>
         </div>
 
         {/* Section 2: Text Left, Image Right */}
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="order-2 md:order-1">
+          <AnimatedSection animation="slide-left" className="order-2 md:order-1">
             <h2 className="text-3xl md:text-4xl font-medium text-foreground leading-tight mb-6">
               Renovations don&apos;t have to be stressful!
             </h2>
@@ -51,26 +54,26 @@ export function About() {
                 Contact Us Today
               </Button>
             </a>
-          </div>
-          <div className="relative order-1 md:order-2">
+          </AnimatedSection>
+          <AnimatedSection animation="slide-right" delay={150} className="order-1 md:order-2">
             <img
-              src="/7.jpg"
+              src="/12.jpg"
               alt="Happy homeowner with oak railing"
               className="w-full h-[400px] md:h-[500px] object-cover"
             />
-          </div>
+          </AnimatedSection>
         </div>
 
         {/* Section 3: Image Left, Text Right */}
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="relative">
+          <AnimatedSection animation="slide-left">
             <img
-              src="/8.jpg"
+              src="/13.jpg"
               alt="Oak Railings LTD team member"
               className="w-full h-[400px] md:h-[500px] object-cover"
             />
-          </div>
-          <div>
+          </AnimatedSection>
+          <AnimatedSection animation="slide-right" delay={150}>
             <h2 className="text-3xl md:text-4xl font-medium text-foreground leading-tight mb-6">
               Your next steps are easy!
             </h2>
@@ -93,7 +96,7 @@ export function About() {
                 Contact Us Today
               </Button>
             </a>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>
