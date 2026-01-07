@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button"
 
 export function Hero() {
   return (
-    <section className="relative pt-[72px] min-h-screen">
-      {/* Background Image */}
+    <section className="relative pt-[72px] min-h-[80vh] md:min-h-screen overflow-hidden">
+      {/* Background Image - clips bottom 20% on mobile */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-[center_top] md:bg-center"
         style={{ backgroundImage: "url('/10.jpg')" }}
       >
         {/* Dark Overlay for text readability */}
@@ -16,7 +16,7 @@ export function Hero() {
       </div>
 
       {/* Text Content - Overlaid on Image */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 lg:py-48 flex flex-col items-center text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 md:py-32 lg:py-48 flex flex-col items-center text-center">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
