@@ -58,7 +58,9 @@ export function Header() {
             >
               <Instagram className="w-5 h-5" />
             </Link>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Get a Quote</Button>
+            <a href="tel:+17785369536">
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Get a Quote</Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -113,7 +115,9 @@ export function Header() {
               >
                 <Instagram className="w-5 h-5" />
               </Link>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Get a Quote</Button>
+              <a href="tel:+17785369536">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Get a Quote</Button>
+              </a>
             </div>
           </nav>
         )}
