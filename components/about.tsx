@@ -44,7 +44,7 @@ export function About() {
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               With our stress-free guide, it has never been easier than before to renovate your home!
-              Our 14 years of experience will make your process as smooth as possible.
+              Our 7 years of experience will make your process as smooth as possible.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               We handle everything from design to installation so you can focus on enjoying your new space.
