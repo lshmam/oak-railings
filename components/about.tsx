@@ -13,7 +13,7 @@ export function About() {
             <img
               src="/11.jpg"
               alt="Beautiful oak railing installation"
-              className="w-full h-[400px] md:h-[500px] object-cover"
+              className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl"
             />
           </AnimatedSection>
           <AnimatedSection animation="slide-right" delay={150}>
@@ -59,7 +59,7 @@ export function About() {
             <img
               src="/12.jpg"
               alt="Happy homeowner with oak railing"
-              className="w-full h-[400px] md:h-[500px] object-cover"
+              className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl"
             />
           </AnimatedSection>
         </div>
@@ -70,7 +70,7 @@ export function About() {
             <img
               src="/13.jpg"
               alt="Oak Railings LTD team member"
-              className="w-full h-[400px] md:h-[500px] object-cover"
+              className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl"
             />
           </AnimatedSection>
           <AnimatedSection animation="slide-right" delay={150}>

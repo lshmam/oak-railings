@@ -63,13 +63,13 @@ export function Gallery() {
               delay={index * 100}
             >
               <div
-                className="group cursor-pointer relative overflow-hidden"
+                className="group cursor-pointer relative overflow-hidden rounded-2xl"
                 onClick={() => setSelectedImage(project)}
               >
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105 rounded-2xl"
                 />
               </div>
             </AnimatedSection>
@@ -119,7 +119,7 @@ export function Gallery() {
               <img
                 src={selectedImage.image || "/placeholder.svg"}
                 alt={selectedImage.title}
-                className="w-full h-auto max-h-[80vh] object-contain"
+                className="w-full h-auto max-h-[80vh] object-contain rounded-2xl"
               />
               <div className="mt-4 text-center">
                 <p className="text-xs tracking-widest uppercase text-primary-foreground/60 mb-1">
